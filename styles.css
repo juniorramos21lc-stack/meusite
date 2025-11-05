@@ -1,0 +1,133 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f0f8ff;
+  color: #333;
+  padding: 20px;
+}
+
+/* Header e Navegação */
+header {
+  background: #4caf50;
+  color: white;
+  padding: 15px 10px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #c8facc;
+}
+
+/* Seções Principais */
+.section-home {
+  background: #a8d5a3;
+  padding: 40px 20px;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-content {
+  background: white;
+  padding: 30px 25px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.section-content h2 {
+  color: #4caf50;
+  margin-bottom: 20px;
+}
+
+.section-content ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
+/* Seção do app */
+.section-app {
+  background: linear-gradient(90deg, #4caf50, #1b5e20);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+
+.section-app h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.section-app p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.app-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.app-buttons .btn img {
+  height: 50px;
+  width: auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.35);
+  transition: transform 0.3s ease;
+}
+
+.app-buttons .btn:hover img {
+  transform: scale(1.1);
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 15px 0;
+  border-top: 1px solid #ccc;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .app-buttons {
+    flex-direction: column;
+  }
+}
